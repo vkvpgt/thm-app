@@ -20,7 +20,7 @@ export class HomePage implements OnInit {
   }, 10000);
   }
   getWeatherData() {
-    this.data = this.httpClient.get('http://10.1.25.131/getdata');
+    this.data = this.httpClient.get('http://10.1.25.132/getdata');
     this.data
       .subscribe(data => {
         console.log('my data: ', data);
